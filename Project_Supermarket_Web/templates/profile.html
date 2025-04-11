@@ -1,0 +1,37 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/profile.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/login.js"></script>
+	</head>
+	<body> 
+		<a href = "{{url_for ('home')}}" id = "homebtn">
+			<img src = "/static/logo.png" height = "auto" width = "15%" id = "logo"></img>
+		</a>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+			<a href = "{{url_for('profile')}}" id = "hyperprofile">
+				<img src = "/static/profile.png" height = "auto" width = "8%" id = "profile"></img>
+			<a>
+        </div>
+		<u><h2>User Information</h2></u> 
+		<table id = "body">
+			<tr> 
+				<td><label>Username: </label></td> 
+				<td><b><label> {{username}}</label></b></td>
+			</tr>
+			<tr> 
+				<td><label>Password: </label></td> 
+				<td><b><label>{{passed}}</label></b></td>
+			</tr> 
+			<tr> 
+				<td><label>Email: </label></td> 
+				<td><b><label>{{email}} </label></b></td>
+			</tr>
+			<tr> 
+				<td><label>Number of orders: </td> 
+				<td><b><label>{{count}}</label></b></td>
+			</tr>
+		</table>
+	</body> 
+</html>
