@@ -1,0 +1,37 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/login.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/login.js"></script>
+	</head>
+	<body> 
+        <img src = "/static/logo.png" height = "auto" width = "8%" id = "logo"></img>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+        </div>
+		<form action = "/loginhome" method = "Post">
+			<u><h2>Log in</h2></u>	
+			<table> 
+				<tr> 
+					<td id = "label"><label id = "user">Username: </label></td> 
+					<td id = "input"><input id = "username" name = "username" autofocus ></input><br></td> 
+				</tr> 
+				<tr>
+					<td id = "label"><label id = "pass">Password: </label> </td> 
+					<td id = "input"><input id = "password" name = "password"></input></td>
+				</tr>
+				<tr> 
+					<td id = "button"><button id = "submit">Log in</button></td>
+				</tr>
+				<tr> 
+					<td id = "check"><label style = "color:red">{{check}}</label>
+				</tr>
+				<tr> 
+					<td><a id = "signup" href = "{{url_for('signup')}}">Signup Here</a></td>
+				</tr> 
+				
+			</table>
+		</form> 
+	</body> 
+
+</html>
