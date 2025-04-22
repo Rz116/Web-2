@@ -1,0 +1,100 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/department.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/login.js"></script>
+	</head>
+	<body> 
+		<a href = "{{url_for ('home')}}">
+			<img src = "/static/logo.png" height = "auto" width = "8%" id = "logo"></img>
+		</a>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+			<a href = "{{url_for('cart')}}" id = "Hypercart">
+				<img src = "/static/cart.png" height = "auto" width = "8%" id = "cart"></img>
+			<a>
+			<a href = "{{url_for('profile')}}" id = "hyperprofile">
+				<img src = "/static/profile.png" height = "auto" width = "8%" id = "profile"></img>
+			</a>
+        </div>
+		<table id = "items">
+			<tr>
+				<th id = "title " colspan = "4"> 
+					<u><h2>Poultry Department</h2></u>
+				</th>
+			<tr>
+			<tr>
+				<td id = "item"> 
+					<a href = "{{url_for('poultry_nuggets')}}">
+						<img src = "/static/poultry_images/nuggets.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "{{url_for('poultry_breast')}}">
+						<img src = "/static/poultry_images/breast.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "{{url_for('poultry_thighs')}}">
+						<img src = "/static/poultry_images/thighs.png" height = "auto" width = "95%" id = "img"></img>
+					</a>
+				</td> 
+				<td id = "item">	
+					<a href = "{{url_for('poultry_whole')}}">
+						<img src = "/static/poultry_images/whole.png" height = "auto" width = "70%" id = "img"></img>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "name"> 
+					<a href = "{{url_for('poultry_nuggets')}}">Frozen Nuggets for $4.00/Pack</a>
+				</td>
+				<td id = "name">
+					<a href = "{{url_for('poultry_breast')}}">Chicken Breast for $5.00/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "{{url_for('poultry_thighs')}}">Chicken Thighs for $4.50/lb </a>
+				</td> 
+				<td id = "name">	
+					<a href = "{{url_for('poultry_whole')}}">Whole chicken for $6.00/lb</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "item"> 
+					<a href = "{{url_for('poultry_wings')}}">
+						<img src = "/static/poultry_images/wings.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "{{url_for('poultry_duck')}}">
+						<img src = "/static/poultry_images/duck.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "{{url_for('poultry_tenders')}}">
+						<img src = "/static/poultry_images/tenders.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td> 
+				<td id = "item">	
+					<a href = "{{url_for('poultry_drums')}}">
+						<img src = "/static/poultry_images/drums.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "name"> 
+					<a href = "{{url_for('poultry_wings')}}">Chicken wings for $3.50/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "{{url_for('poultry_duck')}}">Duck breast for $6.50/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "{{url_for('poultry_tenders')}}">Frozen Chicken tenders for $6.50/Pack</a>
+				</td> 
+				<td id = "name">	
+					<a href = "{{url_for('poultry_drums')}}">Chicken Drumsticks for $3.50/lb</a>
+				</td>	
+			</tr>
+		</table>
+	</body> 
+</html>

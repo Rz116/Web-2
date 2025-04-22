@@ -1,0 +1,53 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/cart.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/login.js"></script>
+	</head>
+	<body> 
+		<a href = "{{url_for ('home')}}">
+			<img src = "/static/logo.png" height = "auto" width = "8%" id = "logo"></img>
+		</a>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+			<a href = "{{url_for('cart')}}" id = "Hypercart">
+				<img src = "/static/cart.png" height = "auto" width = "8%" id = "cart"></img>
+			<a>
+			<a href = "{{url_for('profile')}}" id = "hyperprofile">
+				<img src = "/static/profile.png" height = "auto" width = "8%" id = "profile"></img>
+			<a>
+        </div>
+		<u><h2>Cart</h2></u>
+		<form method = "post">
+			<table> 
+				{% for i in range(0,length) %} 
+					<tr> 
+						<td> 
+							<label>{{product[i]}}</label>
+						</td>
+						<td> 
+							<label> Quantity: </label>
+							<label>{{Quantity[i]}}</label> 
+						</td>	
+						<td>
+							<label>Price: </label>
+							<label>${{Price[i]}}</label>
+						</td> 	
+					</tr> 
+				{%endfor%}
+				<tr> 
+					<td id = "total">
+						<b><label> Total Price: </label></b>
+						<label> ${{total}} </label>
+					</td> 
+				</tr>
+				<tr>
+					<td> 
+						<button id = "submit">Checkout</button>
+					</td>
+				</tr>
+			</table> 
+		</form>
+		
+	</body> 
+</html>
