@@ -6,7 +6,7 @@ function add()
 }
 function checkvalue() 
 {
-	let quantity = document.getElementById("quantity").value(); 
+	let quantity = document.getElementById("quantity").value; 
 	let check1 = quantity/1; 
 	let check2 = parseInt(quantity)/1;
 	switch(true)
@@ -20,7 +20,7 @@ function checkvalue()
 			alert("Please type in a number for the quantity of this item");
 			break; 
 		default: 
-			alert("Something is very wrong");
+			alert("Item has been added to your cart")
 			break;
 	}
 }

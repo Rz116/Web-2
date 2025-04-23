@@ -150,6 +150,12 @@ def poultry_nuggets():
         if (quantity == ""):
             return render_template("poultry_nuggets.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_nuggest.html")
             total_price = int(quantity) * 4
             price.append(total_price)
             items.append("Frozen Nuggets")
@@ -157,7 +163,7 @@ def poultry_nuggets():
             unit.append("Packs")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_nuggets.html")
         
 @app.route("/poultry_breast", methods = ["GET","POST"])
@@ -169,6 +175,12 @@ def poultry_breast():
         if (quantity == ""):
             return render_template("poultry_breast.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_breast.html")
             total_price = int(quantity) * 5
             price.append(total_price)
             items.append("Chicken Breast")
@@ -176,7 +188,7 @@ def poultry_breast():
             unit.append("Pounds")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_breast.html")
 
 @app.route("/poultry_thighs", methods = ["GET", "POST"])
@@ -188,6 +200,12 @@ def poultry_thighs():
         if (quantity == ""):
             return render_template("poultry_thighs.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_thighs.html")
             total_price = int(quantity) * 4.5
             price.append(total_price)
             items.append("Chicken Thighs")
@@ -195,7 +213,7 @@ def poultry_thighs():
             unit.append("Pounds")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_thighs.html")
         
 @app.route("/poultry_whole", methods = ["GET", "POST"])
@@ -207,6 +225,12 @@ def poultry_whole():
         if (quantity == ""):
             return render_template("poultry_whole.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_whole.html")
             total_price = int(quantity) * 6
             price.append(total_price)
             items.append("Whole chicken")
@@ -214,7 +238,7 @@ def poultry_whole():
             unit.append("Pounds")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_whole.html")
 
 @app.route("/poultry_wings")
@@ -226,6 +250,12 @@ def poultry_wings():
         if (quantity == ""):
             return render_template("poultry_wings.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_wings.html")
             total_price = int(quantity) * 3.5
             price.append(total_price)
             items.append("Chicken wings")
@@ -233,7 +263,7 @@ def poultry_wings():
             unit.append("Pounds")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_breast.html")
 
 @app.route("/poultry_duck", methods = ["GET", "POST"])
@@ -245,6 +275,12 @@ def poultry_duck():
         if (quantity == ""):
             return render_template("poultry_duck.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_duck.html")
             total_price = int(quantity) * 6.5
             price.append(total_price)
             items.append("Duck Breast")
@@ -252,7 +288,7 @@ def poultry_duck():
             unit.append("Pounds")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_duck.html")
 
 @app.route("/poultry_tenders", methods = ["GET", "POST"])
@@ -264,6 +300,12 @@ def poultry_tenders():
         if (quantity == ""):
             return render_template("poultry_tenders.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_tenders.html")
             total_price = int(quantity) * 6.5
             price.append(total_price)
             items.append("Frozen Chicken Tenders")
@@ -271,7 +313,7 @@ def poultry_tenders():
             unit.append("Packs")
 
             print(price,items,amount,unit)
-            file()
+           # file()
             return render_template("poultry_tenders.html")
 
 @app.route("/poultry_drums", methods = ["GET","POST"])
@@ -283,6 +325,12 @@ def poultry_drums():
         if (quantity == ""):
             return render_template("poultry_drums.html")
         else:
+            check = len(quantity)
+            listcheck = list(quantity)
+            for i in range(check):
+                check2 = ord(listcheck[i])
+                if(check2 < 49 or check2 > 57):
+                    return render_template("poultry_drums.html")
             total_price = int(quantity) * 3.5
             price.append(total_price)
             items.append("Chicken Drumsticks")
@@ -290,7 +338,7 @@ def poultry_drums():
             unit.append("Pounds")
 
             print(price,items,amount,unit)
-            file()
+            #file()
             return render_template("poultry_drums.html")
 
 #Meat department
@@ -311,9 +359,27 @@ def Beverages():
 #cart
 @app.route("/cart",methods = ["GET","POST"])
 def cart():
-    global price, items, amount, unit
+    global price, items, amount, unit, length, adminrecieptvalue, total
     total = 0
     if request.method == "GET":
+        fileproduct = username + "products" + ".doc"
+        adminfile =  open(fileproduct, "a")
+        for i in range(len(items)):
+            adminfile.write(items[i] + "\n")
+        adminfile.close()
+        
+        fileprice = username + "prices" + ".doc"
+        adminprice = open(fileprice, "a")
+        for i in range(len(price)):
+            adminprice.write(str(price[i]) + "\n")
+        adminprice.close()
+        
+        filequantity = username + "quantity" + ".doc"
+        adminquantity = open(filequantity, "a")
+        for i in range(len(amount)):
+            adminquantity.write(str(amount[i]) + " " + unit[i] + "\n")
+        adminquantity.close()
+        
         fileproduct = username + "products" + ".doc"
         adminfile2 = open(fileproduct, "r")
         adminfile2value = adminfile2.read().splitlines()
@@ -330,21 +396,70 @@ def cart():
         adminquantity2.close()
         print(adminprice2value)
         for i in range(len(adminprice2value)):
-            total = total + float(adminprice2value[i])
-        length = len(adminprice2value)
+            if adminprice2value[i] == "":
+                total = 0
+            else:
+                print(adminprice2value[i])
+                total = total + float(adminprice2value[i])
+        if total == 0:
+            length = 0
+        else:
+            length = len(adminprice2value)
+        price = []
+        items = []
+        amount = []
+        unit = []
         return render_template("cart.html", total = total, length = length, product = adminfile2value, Price = adminprice2value, Quantity = adminquantity2value)
     else:
         price = []
         items = []
         amount = []
         unit = []
+
+        reciept = username + "reciept" + ".doc"
+        recieptadmin = open(reciept, "r")
+        adminrecieptvalue = recieptadmin.read().splitlines()
+        recieptadmin.close()
+        length = len(adminrecieptvalue)
         
+        checkout()
+        return render_template("checkout.html", length = length,reciept = adminrecieptvalue)
+    
+@app.route("/checkout", methods = ["GET","POST"])
+def checkout():
+    total = 0
+    if request.method == "POST":
         file1 = username + "products" + ".doc"
+        adminfile = open(file1, "r")
+        adminfilevalue = adminfile.read().splitlines()
+        adminfile.close()
+
+        file2 = username + "prices" + ".doc"
+        adminfile2 = open(file2, "r")
+        adminfile2value = adminfile2.read().splitlines()
+        adminfile2.close()
+
+        file3 = username + "quantity" + ".doc"
+        adminfile3 = open(file3, "r")
+        adminfile3value = adminfile3.read().splitlines()
+        adminfile3.close()
+        
+        reciept = username + "reciept" + ".doc"
+        recieptadmin = open(reciept, "w")
+        recieptadmin.write("Reciept: " + "\n" + "\n")
+        for i in range(len(adminfile3value)):
+            recieptadmin.write(adminfilevalue[i] + " " + str(adminfile3value[i]) + " " + " $" + str(adminfile2value[i]) + "\n")
+        for i in range(len(adminfile2value)):
+            if adminfile2value[i] == "":
+                total = 0
+            else:    
+                total = total + float(adminfile2value[i])
+        recieptadmin.write( "\n" +"Total Price: " + "   " + " $" + str(total))
+        recieptadmin.close()
         adminfile = open(file1, "r+")
         adminfile.truncate()
         adminfile.close()
 
-        file2 = username + "prices" + ".doc"
         adminfile2 = open(file2, "r+")
         adminfile2.truncate()
         adminfile.close()
@@ -354,23 +469,16 @@ def cart():
         adminfile3.truncate()
         adminfile.close()
         
+        reciept = username + "reciept" + ".doc"
+        recieptadmin = open(reciept, "r")
+        adminrecieptvalue = recieptadmin.read().splitlines()
+        recieptadmin.close()
+        length = len(adminrecieptvalue)
+        
+        return render_template("checkout.html", reciept = adminrecieptvalue, length = length)
+    else:
         return profile()
-def file():
-    fileproduct = username + "products" + ".doc"
-    adminfile = open(fileproduct, "w")
-    for i in range(len(items)):
-        adminfile.write(items[i] + "\n")
-    adminfile.close()
-    fileprice = username + "prices" + ".doc"
-    adminprice = open(fileprice, "w")
-    for i in range(len(price)):
-        adminprice.write(str(price[i]) + "\n")
-    adminprice.close()
-    filequantity = username + "quantity" + ".doc"
-    adminquantity = open(filequantity, "w")
-    for i in range(len(amount)):
-        adminquantity.write(str(amount[i]) + " " + unit[i] + "\n")
-    adminquantity.close()
+
     
 if __name__ == "__main__":
     app.run()
