@@ -318,7 +318,21 @@ def reciept():
     adminfile3 = open(file3, "r")
     adminfile3value = adminfile3.read().splitlines()
     adminfile3.close()
+    
+    file4 = username + ".doc"
+    adminfile4 = open(file4, "r")
+    adminfile4value = adminfile4.read().splitlines()
+    orders = adminfile4value[3].strip()
+    numberof = int(orders) + 1
+    removed = adminfile4value.pop(3)
+    adminfile4value.append(numberof)
+    adminfile4.close()
 
+    admin = open(file4,"w")
+    for i in range(len(adminfile4value)):
+        admin.write(str(adminfile4value[i]) + "\n")
+    admin.close()
+      
     reciept = username + "reciept" + ".doc"
     recieptadmin = open(reciept, "r")
     adminrecieptvalue = recieptadmin.read().splitlines()
