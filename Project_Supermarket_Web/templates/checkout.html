@@ -18,15 +18,28 @@
 			<a>
         </div>
 		<table id = "reciept"> 
+			<tr> 
+				<th colspan = "2"> 
+					<u><h2>Reciept</h2></u>
+				</th>
+			</tr>
 			{% for i in range(0,length) %} 
 				<tr> 
 					<td id = "reciept_data"> 
-						<label>{{reciept[i]}}</label>
+						<label>{{product[i]}}</label>
+						<label>{{quantity[i]}}</label> 
+						<label>$ {{price[i]}}</label>
 					</td> 	
 				</tr> 
 			{%endfor%}
+			<tr> 
+				<td id = "reciept_data"> 
+					<label> Total Price: </label>
+					<label> ${{total}} </label>
+				</td>
+			</tr>
 		</table>
-		<form method = "Get">
+		<form method = "Post">
 			<table id = "checkout"> 
 				<tr> 
 					<td id = "info"> 

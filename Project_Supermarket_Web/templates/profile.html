@@ -36,6 +36,16 @@
 				<td><b><label>{{count}}</label></b></td>
 			</tr>
 		</table>
+		<u><h2>Last Order</h2></u>
+		<table id = "reciept"> 
+			{% for i in range(0,length) %} 
+				<tr> 
+					<td id = "reciept_data"> 
+						<label>{{reciept[i]}}</label>
+					</td> 	
+				</tr> 
+			{%endfor%}
+		</table>
 		<table id = "Log"> 
 			<tr>
 				<td id = "link"> 
