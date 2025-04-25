@@ -1,0 +1,100 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/department.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/login.js"></script>
+	</head>
+	<body> 
+		<a href = "{{url_for ('home')}}">
+			<img src = "/static/logo.png" height = "auto" width = "8%" id = "logo"></img>
+		</a>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+			<a href = "{{url_for('cart')}}" id = "Hypercart">
+				<img src = "/static/cart.png" height = "auto" width = "8%" id = "cart"></img>
+			<a>
+			<a href = "{{url_for('profile')}}" id = "hyperprofile">
+				<img src = "/static/profile.png" height = "auto" width = "8%" id = "profile"></img>
+			</a>
+        </div>
+		<table id = "items">
+			<tr>
+				<th id = "title " colspan = "4"> 
+					<u><h2>Meat</h2></u>
+				</th>
+			<tr>
+			<tr>
+				<td id = "item"> 
+					<a href = "/meat_steak">
+						<img src = "/static/meat_images/steak.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "/meat_ground">
+						<img src = "/static/meat_images/ground_beef.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "/meat_pork_ground">
+						<img src = "/static/meat_images/ground_pork.png" height = "auto" width = "95%" id = "img"></img>
+					</a>
+				</td> 
+				<td id = "item">	
+					<a href = "/meat_pork_chop">
+						<img src = "/static/meat_images/pork_chop.png" height = "auto" width = "70%" id = "img"></img>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "name"> 
+					<a href = "/meat_steak">{{meat[0]}} for ${{price[0]}}/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "/meat_ground">{{meat[1]}} for ${{price[1]}}/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "/meat_pork_ground">{{meat[2]}} for ${{price[2]}}/lb </a>
+				</td> 
+				<td id = "name">	
+					<a href = "/meat_pork_chop">{{meat[3]}} for ${{price[3]}}/lb</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "item"> 
+					<a href = "/meat_lamb_chop">
+						<img src = "/static/meat_images/lamb_chop.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "/meat_bacon">
+						<img src = "/static/meat_images/bacon.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+				<td id = "item">
+					<a href = "/meat_belly">
+						<img src = "/static/meat_images/belly.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td> 
+				<td id = "item">	
+					<a href = "/meat_mutton">
+						<img src = "/static/meat_images/ground_lamb.png" height = "auto" width = "75%" id = "img"></img>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "name"> 
+					<a href = "/meat_lamb_chop">{{meat[4]}} for ${{price[4]}}/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "/meat_bacon">{{meat[5]}} for ${{price[5]}}/lb</a>
+				</td>
+				<td id = "name">
+					<a href = "/meat_belly">{{meat[6]}} for ${{price[6]}}/lb</a>
+				</td> 
+				<td id = "name">	
+					<a href = "/meat_mutton">{{meat[7]}} for ${{price[7]}}/lb</a>
+				</td>	
+			</tr>
+		</table>
+	</body> 
+</html>

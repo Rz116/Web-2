@@ -1,0 +1,80 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/home.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/login.js"></script>
+	</head>
+	<body> 
+		<a href = "{{url_for ('home')}}">
+			<img src = "/static/logo.png" height = "auto" width = "8%" id = "logo"></img>
+		</a>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+			<a href = "{{url_for('cart')}}" id = "Hypercart">
+				<img src = "/static/cart.png" height = "auto" width = "8%" id = "cart"></img>
+			<a>
+			<a href = "{{url_for('profile')}}" id = "hyperprofile">
+				<img src = "/static/profile.png" height = "auto" width = "8%" id = "profile"></img>
+			<a>
+        </div>
+		
+		<u><h2>Departments</h2></u>
+		<table id = "advertise">
+			<tr id = "ADD">
+				<td id =  "adtext"> 
+					SHOP HERE TO GET THE BEST DEALS!!!!
+				</td>
+				<td id = "adImg"> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td> 
+			</tr>
+		</table>
+		
+		<table id = "departments"> 
+			<tr>
+				<td id = "department">
+					<a href = "{{url_for('Poultry')}}">
+						<img src = "/static/Poultry.png" height = "auto" width = "60%" id = "image"></img>
+					<a>
+				</td > 
+				<td id = "department">
+					<a href = "{{url_for('Meat')}}" >
+						<img src = "/static/Meat.png" height = "auto" width = "60%" id = "image"></img>
+					</a>
+				</td> 
+			</tr> 
+			<tr>
+				<td id = "tag"> 
+					<a href = "{{url_for('Poultry')}}" id = "name">Poultry</a>
+				</td>
+				<td id = "tag"> 
+					<a href = "{{url_for('Meat')}}" id = "name">Meat</a>
+				</td>
+			</tr>
+			<tr>
+				<td id = "department">
+					<a href = "{{url_for('Produce')}}">
+						<img src = "/static/Produce.png" height = "auto" width = "60%" id = "image"></img>
+					<a>
+				</td> 
+				<td id = "department">
+					<a href = "{{url_for('Beverage')}}">
+						<img src = "/static/Drinks.png" height = "auto" width = "60%" id = "image"></img>
+					<a>
+				</td> 
+			</tr> 
+			<tr>
+				<td id = "tag"> 
+					<a href = "{{url_for('Produce')}}" id = "name">Produce</a>
+				</td>
+				<td id = "tag"> 
+					<a href = "{{url_for('Beverage')}}" id = "name">Beverages</a>
+				</td>
+			</tr>
+		</table> 
+	</body> 
+
+</html>

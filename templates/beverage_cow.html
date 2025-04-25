@@ -1,0 +1,44 @@
+<html> 	
+	<head> 
+		<link rel = "stylesheet" href = "/static/items.css"></link> 
+		<link rel = "icon" type = "image/x-icon" href = "/static/logo.png"></link>
+		<script src = "/static/items.js"></script>
+	</head>
+	<body> 
+		<a href = "{{url_for ('home')}}">
+			<img src = "/static/logo.png" height = "auto" width = "8%" id = "logo"></img>
+		</a>
+        <div id = "heading">
+            <h1 id = "title">Lin Lao Super </h1>
+			<a href = "{{url_for('cart')}}" id = "Hypercart">
+				<img src = "/static/cart.png" height = "auto" width = "8%" id = "cart"></img>
+			<a>
+			<a href = "{{url_for('profile')}}" id = "hyperprofile">
+				<img src = "/static/profile.png" height = "auto" width = "8%" id = "profile"></img>
+			</a>
+        </div>
+		<form method = "Post">
+			<table id = "item">
+				<tr> 
+					<th> 
+						Beverages: {{product[5]}}
+					</th>
+					<th> 
+						<a href = "{{url_for('Beverage')}}" id = "back">Go back</a>
+					</th>
+				</tr>
+				<tr> 
+					<td id = "image"> 
+						<img src = "/static/beverages_images/cow.png" height = "auto" width = "75%" id = "img"></img>
+					</td>
+					<td id = "text"> 
+						<label id = "Item_name">{{product[5]}}</label><br> 
+						<label id = "item_price">${{price[5]}}/Gal</label></br>	
+						<label id = "instruct">Quantity(Gallons): </label> 
+						<input name = "quantity" id = "quantity" autofocus></input><br><br>
+						<button id = "Submit">ADD TO CART</button>
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>
